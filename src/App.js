@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 import Users from "./components/Users/Users";
 import Topics from "./components/Topics/Topics";
 
-function App() {
+const app = () => {
   return (
     <Router>
       <div>
@@ -44,6 +44,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
-export default App;
+export default app;
