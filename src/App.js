@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Users from "./components/Users/Users";
+import Topics from "./components/Topics/Topics";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
             <li>
               <Link to="/users">Users</Link>
             </li>
+            <li>
+              <Link to="/topics">Topics</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -29,6 +33,9 @@ function App() {
           </Route>
           <Route path="/users">
             <Users />
+          </Route>
+          <Route path="/topics">
+            <Topics />
           </Route>
           <Route path="/">
             <Home />
